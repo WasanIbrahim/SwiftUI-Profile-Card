@@ -9,7 +9,43 @@ import SwiftUI
 
 struct SwiftUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+           // background(Color.blue)
+            ZStack{
+                
+                
+                Circle()
+                                .fill(Color.cyan)
+                                .frame(width: 200, height: 200)
+                Image("user_profile11")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFit()
+
+            }
+            Text("Wasan Albalawi")
+                .padding()
+            
+            ZStack{
+                
+                Color.cyan
+                    .frame(width: 350, height: 50)
+                HStack{
+                  Image("email")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                    
+                    Text("wasan.ibrahiim@gmailcom")
+                    
+                }
+                
+            }
+            
+            
+
+        }
+        
+        
     }
 }
 
